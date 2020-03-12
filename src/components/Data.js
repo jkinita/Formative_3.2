@@ -12,7 +12,7 @@ class Data extends Component {
           <li className="card-body d-flex flex-column align-items-center">
           <img src={(WorkImg)} className="card-img-top"/>
               <p className="card-title">Name (website or app name)</p>
-              <p className="list-group-item">Author full name</p>
+              <p className="card-text">Author full name</p>
               <a className="card-link" href="#">url (link to site/author's portfolio) </a>
           </li>
       </div>
