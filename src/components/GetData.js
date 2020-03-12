@@ -4,7 +4,6 @@ class GetData extends React.Component {
   constructor(props) {
     super(props);
   }
-s
 
   render() {
     return (
