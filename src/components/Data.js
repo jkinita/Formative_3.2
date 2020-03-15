@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Axios from "axios";
+import { navigate } from '@reach/router';
 
 class Data extends Component {
   constructor(props) {
@@ -21,6 +22,12 @@ class Data extends Component {
     window.open(this.props.url);
   };
 
+  gotoEdit = e => {
+
+    navigate(`/updateproject/${this.props.uid}`);
+
+  };
+
   render() {
     return (
       <div className="card m-2 ">
@@ -33,7 +40,7 @@ class Data extends Component {
              <button className="btn btn-primary" onClick={this.urlClick}>
             More info
           </button>
-          <button className="btn btn-outline-primary mr-4 ml-4">Update</button>
+          <button className="btn btn-outline-primary mr-4 ml-4" onClick={this.gotoEdit}>Update</button>
           <button className="btn btn-outline-danger" onClick={this.handleClick}>
             Remove
           </button>

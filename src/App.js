@@ -5,6 +5,7 @@ import "./css/App.css"
 import Header from "./components/Header";
 import GetData from './components/GetData';
 import AddProject from './components/AddProject';
+import UpdateProject from './components/UpdataProject'
 
 class App extends React.Component {
   render() {
@@ -16,6 +17,7 @@ class App extends React.Component {
 
         <Router>
         <AddProject path="/addproject"/>
+        <UpdateProject path="/updateproject"/>
         </Router>
         
       </div>
