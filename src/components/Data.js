@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Axios from "axios";
-import { navigate } from "@reach/router";
 
 class Data extends Component {
   constructor(props) {
@@ -18,10 +17,6 @@ class Data extends Component {
     );
   };
 
-  gotoEdit = e => {
-    navigate(`/updateuser/${this.props.uid}`);
-  };
-
   urlClick = event => {
     window.open(this.props.url);
   };
@@ -33,10 +28,17 @@ class Data extends Component {
           <img src={this.props.imageUrl} className="card-img-top mb-3" />
           <p className="card-title">Project name: {this.props.name}</p>
           <p className="card-text">Author: {this.props.author}</p>
-          <button
-            className="btn btn-primary"
-            onClick={this.urlClick}
-          >More info</button>
+
+          <div className="d-flex">
+             <button className="btn btn-primary" onClick={this.urlClick}>
+            More info
+          </button>
+          <button className="btn btn-outline-primary mr-4 ml-4">Update</button>
+          <button className="btn btn-outline-danger" onClick={this.handleClick}>
+            Remove
+          </button>
+          </div>
+         
         </li>
       </div>
     );
