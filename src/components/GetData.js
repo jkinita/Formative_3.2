@@ -24,7 +24,7 @@ class GetData extends React.Component {
   render() {
     return (
       <div className="d-flex justify-content-center">
-        <ul className="d-flex p-0">
+        <ul className="d-flex flex-wrap p-0">
         {this.state.data.map((element, i) => {
             return (
               <Data
