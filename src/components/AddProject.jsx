@@ -33,7 +33,7 @@ class AddProject extends Component {
             className="form-control"
           ></input>
 
-          <label>Portfolio url</label>
+          <label>Project url</label>
           <input
             type="text"
             name="url"
